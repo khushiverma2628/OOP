@@ -1,0 +1,19 @@
+import java.util.Scanner;
+class Practical4{
+  public static void main(String[] args){
+   Scanner sc = new Scanner(System.in);
+   System.out.print("enter your Weight in pounds: ");
+double w = sc.nextDouble();
+
+System.out.print("enter your Height in Inches: ");
+double h = sc.nextDouble();
+ double kg= w*0.45359237;
+System.out.print("your Weight in Kilograms: "+kg+"+kgs.");
+double meter=h*0.0254;
+System.out.print("yor Height in Meters:" +meter+ "meter.");
+double bmi = kg/(meter*meter);
+System.out.println("your BMI:"+bmi);
+sc.close();
+
+}
+}
